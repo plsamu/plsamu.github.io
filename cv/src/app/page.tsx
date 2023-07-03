@@ -1,7 +1,9 @@
+import DetailsContainer from "@/components/details"
+
 export default function Home() {
 	return (
 		<main className="flex">
-			Ciao
+			<DetailsContainer children summaryText={"Qualifications"} contentText={"Degree"} />
 		</main>
 	)
 }

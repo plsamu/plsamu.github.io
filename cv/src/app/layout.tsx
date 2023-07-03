@@ -1,4 +1,6 @@
-import './globals.css'
+import '../css/globals.css'
+import '../css/text.css'
+import '../css/components.css'
 
 export const metadata = {
 	title: 'Create Next App',
