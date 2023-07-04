@@ -14,7 +14,7 @@ details {
 		}
 
 		&:hover {
-			background: #1a1a1a;
+			background: var(--details-hover);
 			cursor: pointer;
 		}
 	}

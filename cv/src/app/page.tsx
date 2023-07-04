@@ -1,6 +1,5 @@
 import DetailsContainer from "@/components/details"
 import LinkToBlank from "@/components/link_to_blank"
-import Head from "next/head"
 
 export default function Home() {
 	return (
