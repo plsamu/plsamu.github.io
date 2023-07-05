@@ -1,13 +1,10 @@
 "use client";
 
-import { createContext, useEffect } from "react";
-
-export const ThemeContext = createContext("");
+import { useEffect } from "react";
 
 export default function ThemeProvider({ children }: {
 	children: React.ReactNode
 }) {
-
 	useEffect(() => {
 		// setLoading(true)
 		if (window.matchMedia('(prefers-color-scheme)').media !== 'not all') {
@@ -18,6 +15,10 @@ export default function ThemeProvider({ children }: {
 				console.log(`Dark mode is ${darkModeOn ? '🌒 on' : '☀️ off'}.`);
 			});
 		}
+		if (localStorage.theme === undefined) {
+			localStorage.setItem('theme', 'dark');
+		}
+		console.log("localStorage theme: ", localStorage.theme);
 		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
 			console.log("add dark")
 			document.documentElement.classList.add('dark')
@@ -26,6 +27,5 @@ export default function ThemeProvider({ children }: {
 			document.documentElement.classList.remove('dark')
 		}
 	}, [])
-
 	return children;
 }

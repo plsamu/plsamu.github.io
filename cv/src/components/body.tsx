@@ -1,18 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import toogleThemeColor from "@/js/theme_changer";
 
-function Body(obj: {
+function Body({ children }: {
 	children: null | React.ReactNode;
 }): React.JSX.Element {
-	const [theme, setTheme] = useState("light")
 	const toggleTheme = () => {
-		theme == 'light' ? setTheme('dark') : setTheme('light')
+		toogleThemeColor()
+		console.log("body theme check: ", localStorage.getItem("theme"))
 	}
 	return (
 		<body>
 			<button className="switchTheme" onClick={toggleTheme}>Switch Theme</button>
-			{obj.children}
+			{children}
 		</body>
 	)
 }
