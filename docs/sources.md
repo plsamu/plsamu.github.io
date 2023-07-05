@@ -31,3 +31,15 @@
 - <https://blog.logrocket.com/theming-in-next-js-with-styled-components-and-usedarkmode/>
 - <https://stackoverflow.com/questions/74965849/youre-importing-a-component-that-needs-usestate-it-only-works-in-a-client-comp>
 - <https://web.dev/prefers-color-scheme/>
+- <https://dev.to/rubalaine/dark-mode-with-html-css-javascript-only-4nb9>
+
+### theme changer methods
+
+- change using localStorage
+- css
+    - `[data-theme="dark"]`
+        - "data attribute"
+        - you can set the attribute from javascript
+            - `document.documentElement.setAttribute("data-theme", "dark");`
+    - `@media (prefers-color-scheme: light)`
+        - questo media non è modificabile
