@@ -6,7 +6,7 @@
 :root {
 	--foreground-rgb: rgba(255, 255, 255);
 	--background-start-rgb: rgb(0, 0, 0);
-		--background-end-rgb: rgb(1, 9, 47);
+	--background-end-rgb: rgb(1, 9, 47);
 	--border-color: rgba(255, 255, 255, 0.2);
 	--details-hover: rgba(41, 41, 41, 0.938);
 }
@@ -15,7 +15,7 @@
 	--foreground-rgb: rgba(0, 0, 0);
 	--background-start-rgb: rgb(209, 210, 210);
 	--background-end-rgb: rgba(255, 255, 255);
-	--border-color: rgba(255, 255, 255, 0.2);
+	--border-color: rgb(96, 96, 96);
 	--details-hover: rgba(231, 230, 255, 0.938);
 }
 

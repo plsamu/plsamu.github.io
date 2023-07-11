@@ -7,7 +7,11 @@ function Body({ children }: {
 }): React.JSX.Element {
 	return (
 		<body>
-			<button className="switchTheme" onClick={toogleThemeColor}>Switch Theme</button>
+			<div className="toggle">
+				<div className="toggle-theme-value">Light</div>
+				<div className="toggle-theme-value">Dark</div>
+			</div>
+			<button onClick={toogleThemeColor}>Switch Theme</button>
 			{children}
 		</body>
 	)

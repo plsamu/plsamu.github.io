@@ -3,19 +3,14 @@ body {
 	min-height: 100vh;
 }
 
-html {
+main {
 	display: table;
 	margin: auto;
 }
 
-body {
-	display: table-cell;
-	vertical-align: top;
-}
-
 @media screen and (min-width: 600px) {
-	body {
-		min-width: 600px
+	main {
+			min-width: 600px;
 	}
 
 	.column1 {
@@ -27,13 +22,6 @@ body {
 		float: left;
 		width: 50%;
 	}
-}
-
-/* Clear floats after the columns */
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
 }
 
 /* Responsive layout

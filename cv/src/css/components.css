@@ -32,3 +32,79 @@ details {
 		margin-left: 30px;
 	}
 }
+/* -------- Switch Styles ------------*/
+
+.toggle {
+	margin: auto;
+	display: flex;
+	width: 80%;
+	border: solid 1px var(--foreground-rgb);
+	cursor: pointer;
+}
+
+.toggle-theme-value {
+	width: 50%;
+	border: solid 1px var(--foreground-rgb);
+	transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.names {
+	color: var(--foreground-rgb);
+	font-weight: bolder;
+	justify-content: space-between;
+	user-select: none;
+}
+
+/* Toggle */
+[type="checkbox"]:checked+.app .toggle {
+	transform: translateX(100%);
+	background-color: #34323D;
+}
+
+[type="checkbox"]:checked+.app .dark {
+	opacity: 1;
+}
+
+[type="checkbox"]:checked+.app .light {
+	opacity: .5;
+}
+
+/* App */
+[type="checkbox"]:checked+.app .body {
+	background-color: #26242E;
+	color: white;
+}
+
+/* Circle */
+[type="checkbox"]:checked+.app .crescent {
+	transform: scale(1);
+	background: #26242E;
+}
+
+[type="checkbox"]:checked+.app .circle {
+	background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
+}
+
+[type="checkbox"]:checked+.app .main-circle {
+	background: linear-gradient(40deg, #8983F7, #A3DAFB 70%);
+}
+
+/* Fab */
+[type="checkbox"]:checked+.app .fab {
+	background-color: #34323D;
+}
+
+[type="checkbox"]:checked+.app .arrow,
+[type="checkbox"]:checked+.app .mark,
+[type="checkbox"]:checked+.app .battery {
+	background-color: white;
+}
+
+[type="checkbox"]:checked+.app .network {
+	border-color: transparent transparent white transparent;
+}
+
+[type="checkbox"]:checked+.app .swipe {
+	background-color: #34323D;
+	opacity: 1;
+}

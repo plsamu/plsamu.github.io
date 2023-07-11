@@ -5,6 +5,7 @@
 ## css
 
 - <https://freefrontend.com/html-details-summary-css/>
+- <https://code.visualstudio.com/Docs/languages/CSS>
 
 ### links
 
@@ -17,7 +18,6 @@
 ## text - alt codes
 
 - <https://www.alt-codes.net/arrow_alt_codes.php>
-
 
 # nextjs things
 
