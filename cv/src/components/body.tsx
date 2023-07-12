@@ -8,9 +8,9 @@ function Body({ children }: {
 }): React.JSX.Element {
 	return (
 		<body>
-			<ToggleThemeChanger />
 			<button onClick={toogleThemeColor}>Switch Theme</button>
 			{children}
+			<ToggleThemeChanger />
 		</body>
 	)
 }

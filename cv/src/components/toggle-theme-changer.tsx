@@ -1,12 +1,16 @@
 import '../css/toggle-theme-changer.css'
 function ToggleThemeChanger(): React.JSX.Element {
-	return <input type="checkbox" className="toggle" defaultChecked />
+	return <div className='toggleThemeContainer'>
+		<input type="checkbox" className="toggle" defaultChecked />
+		<span className='toggleThemeSpan'>Light</span>
+	</div>
+
 }
 export default ToggleThemeChanger;
 
 /*
-			<div className="toggle">
-				<div className="toggle-theme-value">Light</div>
-				<div className="toggle-theme-value">Dark</div>
-			</div>
+	<div className="toggle">
+		<div className="toggle-theme-value">Light</div>
+		<div className="toggle-theme-value">Dark</div>
+	</div>
 */
