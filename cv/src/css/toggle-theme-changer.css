@@ -1,10 +1,12 @@
 :root {
 	--theme-changer-toggle-width: 200px;
+	--theme-changer-toggle-height: 40px;
 }
 
 .toggleThemeContainer {
 	width: var(--theme-changer-toggle-width);
-	height:50px;
+	height: var(--theme-changer-toggle-height);
+	margin-bottom: 20px;
 }
 
 /* hide checkbox */
@@ -22,9 +24,9 @@ input[type="checkbox"]:focus {
 }
 
 .toggle {
-	width: var(--theme-changer-toggle-width);
 	position: absolute;
-	height: 50px;
+	width: var(--theme-changer-toggle-width);
+	height: var(--theme-changer-toggle-height);
 	display: inline-block;
 	border: 2px solid #000000;
 	transition: all .2s ease;
@@ -39,7 +41,7 @@ input[type="checkbox"]:focus {
 	top: 2px;
 	left: 2px;
 	width: 100px;
-	height: 42px;
+	height: calc(var(--theme-changer-toggle-height) - 8px);
 	background: rgba(255, 255, 255, 0.201);
 	box-shadow: 0 1px 2px rgba(44, 44, 44, .2);
 	transition: all .3s cubic-bezier(.5, .1, .75, 0.5);
@@ -55,14 +57,8 @@ input[type="checkbox"]:focus {
 
 /* text */
 .toggleThemeSpan {
+	text-align: center;
+	flex: 1;
 	z-index: 1;
 	user-select: none;
-	margin-left: 34px;
-	margin-top: 10px;
-	position: absolute;
-}
-
-.toggleThemeSpan::after {
-	content: 'Dark';
-	margin-left: 60px;
 }

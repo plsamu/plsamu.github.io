@@ -14,9 +14,7 @@ a::before {
 }
 
 a {
-	padding: 7px 0;
-	color: inherit;
-	text-decoration: none;
+	padding: 4px 0;
 	border-bottom: 1px solid var(--border-color);
 }
 

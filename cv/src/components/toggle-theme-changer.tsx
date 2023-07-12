@@ -1,6 +1,6 @@
 import { setThemeDark, setThemeLight } from '@/js/theme_changer';
 import '../css/toggle-theme-changer.css'
-import { ChangeEvent, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function ToggleThemeChanger(): React.JSX.Element {
 	const [checked, setChecked] = useState<boolean>();
@@ -25,7 +25,16 @@ function ToggleThemeChanger(): React.JSX.Element {
 	return <div className='toggleThemeContainerRoot'>
 		<div className='toggleThemeContainer'>
 			<input onClick={handleOnChange} type="checkbox" className="toggle" defaultChecked={checked} />
-			<span className='toggleThemeSpan'>Light</span>
+			<div style={{
+				width: "98%", 
+				height: "100%", 
+				display: "flex", 
+				flexDirection: "row", 
+				alignItems: "center",
+			}}>
+				<span className='toggleThemeSpan'>Light</span>
+				<span className='toggleThemeSpan'>Dark</span>
+			</div>
 		</div>
 	</div>
 

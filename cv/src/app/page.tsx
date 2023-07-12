@@ -1,17 +1,12 @@
-import DetailsContainer from "@/components/details"
-import LinkToBlank from "@/components/link_to_blank"
+import Column1 from "@/components/column1"
+import Column2 from "@/components/column2"
 
 export default function Home() {
 	return (
 		<main>
 			<div className="row">
-				<div className="column1">
-					<p>Samuele Plescia</p>
-					<LinkToBlank url={"https://github.com/plsamu?tab=repositories"} text={"github repository"} />
-				</div>
-				<div className="column2">
-					<DetailsContainer children summaryText={"Qualifications"} contentText={"Degree"} />
-				</div>
+				<Column1/> 
+				<Column2/>
 			</div>
 		</main>
 	)
