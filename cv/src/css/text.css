@@ -10,14 +10,23 @@
 }
 
 a::before {
-	content: '→ ';
+	content: '🔗 ';
 }
 
 a {
-	padding: 4px 0;
+	display: block;
+	padding: 4px 0px 4px 0px;
+	margin: 4px 0px 4px 0px;
 	border-bottom: 1px solid var(--border-color);
 }
 
 a:hover {
-	border-bottom-color: #fff9;
+	background: var(--details-hover);
+}
+
+pre {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: block;
+	margin: 5px 0px 5px 0px;
 }

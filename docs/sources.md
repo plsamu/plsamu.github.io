@@ -42,4 +42,8 @@
         - you can set the attribute from javascript
             - `document.documentElement.setAttribute("data-theme", "dark");`
     - `@media (prefers-color-scheme: light)`
-        - questo media non è modificabile
+        - questo media non è modificabile  
+
+# Ascii emoji icons
+
+- <https://emojipedia.org/link/>

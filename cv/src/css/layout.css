@@ -16,6 +16,7 @@ body {
 	}
 
 	.column1 {
+		padding-right: 5px;
 		float: left;
 		width: 30%;
 	}
