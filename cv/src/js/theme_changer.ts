@@ -1,13 +1,14 @@
-export default function toogleThemeColor() {
-	let localStorage = window.localStorage;
-	if (localStorage.theme === undefined) {
-		localStorage.setItem('theme', 'dark');
-	}
-	if (localStorage.theme === 'dark') {
-		document.documentElement.setAttribute("data-theme", "light");
-		localStorage.setItem('theme', 'light');
-	} else {
-		document.documentElement.setAttribute("data-theme", "dark");
-		localStorage.setItem('theme', 'dark');
-	}
+export function setThemeDark() {
+	document.documentElement.setAttribute("data-theme", "dark");
+	window.localStorage.setItem('theme', 'dark');
+}
+
+export function setThemeLight() {
+	document.documentElement.setAttribute("data-theme", "light");
+	window.localStorage.setItem('theme', 'light');
+}
+
+export function setThemeByCookies() {
+	let theme = window.localStorage.theme
+	theme === undefined || theme === 'dark' ? setThemeDark() : setThemeLight()
 }

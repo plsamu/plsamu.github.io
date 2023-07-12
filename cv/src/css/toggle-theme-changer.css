@@ -4,6 +4,7 @@
 
 .toggleThemeContainer {
 	width: var(--theme-changer-toggle-width);
+	height:50px;
 }
 
 /* hide checkbox */
@@ -23,11 +24,9 @@ input[type="checkbox"]:focus {
 .toggle {
 	width: var(--theme-changer-toggle-width);
 	position: absolute;
-	border-radius: 24px;
 	height: 50px;
 	display: inline-block;
 	border: 2px solid #000000;
-	background: linear-gradient(180deg, #2D2F39 0%, #1F2027 100%);
 	transition: all .2s ease;
 }
 
@@ -41,7 +40,6 @@ input[type="checkbox"]:focus {
 	left: 2px;
 	width: 100px;
 	height: 42px;
-	border-radius: 21px;
 	background: rgba(255, 255, 255, 0.201);
 	box-shadow: 0 1px 2px rgba(44, 44, 44, .2);
 	transition: all .3s cubic-bezier(.5, .1, .75, 0.5);
@@ -59,12 +57,12 @@ input[type="checkbox"]:focus {
 .toggleThemeSpan {
 	z-index: 1;
 	user-select: none;
-	margin-left: 30px;
+	margin-left: 34px;
 	margin-top: 10px;
 	position: absolute;
 }
 
 .toggleThemeSpan::after {
 	content: 'Dark';
-	margin-left: 65px;
+	margin-left: 60px;
 }

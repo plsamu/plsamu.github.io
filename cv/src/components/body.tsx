@@ -1,6 +1,5 @@
 "use client";
 
-import toogleThemeColor from "@/js/theme_changer";
 import ToggleThemeChanger from "./toggle-theme-changer";
 
 function Body({ children }: {
@@ -8,9 +7,8 @@ function Body({ children }: {
 }): React.JSX.Element {
 	return (
 		<body>
-			<button onClick={toogleThemeColor}>Switch Theme</button>
-			{children}
 			<ToggleThemeChanger />
+			{children}
 		</body>
 	)
 }
