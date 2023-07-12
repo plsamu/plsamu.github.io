@@ -1,11 +1,12 @@
-html,
 body {
+	padding: 20px;
 	min-height: 100vh;
-}
-
-main {
-	display: table;
-	margin: auto;
+	display: flex;
+		flex-direction: column;
+		color: var(--foreground-rgb);
+		background: linear-gradient(to bottom,
+				transparent,
+				var(--background-end-rgb)) var(--background-start-rgb);
 }
 
 @media screen and (min-width: 600px) {
@@ -20,7 +21,7 @@ main {
 
 	.column2 {
 		float: left;
-		width: 50%;
+		width: 70%;
 	}
 }
 

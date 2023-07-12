@@ -18,10 +18,3 @@
 	--border-color: rgb(96, 96, 96);
 	--details-hover: rgba(231, 230, 255, 0.938);
 }
-
-body {
-	color: var(--foreground-rgb);
-	background: linear-gradient(to bottom,
-			transparent,
-			var(--background-end-rgb)) var(--background-start-rgb);
-}
