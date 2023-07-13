@@ -22,9 +22,10 @@ function Column2(): React.JSX.Element {
 				<WorkExp
 					name="aizoOn"
 					url="https://www.aizoongroup.com"
-					workPosition="Backend Dev"
+					workPosition="Backend Dev - Cyber Software Engineer"
 					dates={["10/2022 -> presente, Apprenticeship contract"]}
 					heavyUseTech="Java Spring Boot, Spring Security, Maven, Docker, MongoDB, Mongo Compass, MySQL, DBeaver, Joplin, IntelliJ, MobaXterm, GitLab"
+					mediumUseTech="NodeJS"
 					lowUseTech="Kafka, Zeek"
 					css={{ marginTop: "20px" }}
 				/>
