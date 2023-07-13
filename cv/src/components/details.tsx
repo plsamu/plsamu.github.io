@@ -1,12 +1,16 @@
-function DetailsContainer(obj: {
+function DetailsContainer({
+	children, summaryText
+}: {
 	children: null | React.ReactNode;
 	summaryText: string;
-	contentText: string;
 }): React.JSX.Element {
+	// <pre className="details-content">{obj.contentText}</pre>
 	return (
 		<details className="unselectable">
-			<summary className="unselectable">{obj.summaryText}</summary>
-			<div className="unselectable details-content">{obj.contentText}</div>
+			<summary className="unselectable">{summaryText}</summary>
+			<pre className="unselectable details-content">
+				{children}
+			</pre>
 		</details>
 	)
 }

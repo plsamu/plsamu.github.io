@@ -1,4 +1,6 @@
-function LinkToBlank({ url, text }: { url: string; text: string }): React.JSX.Element {
-	return <a href={url} target="_blank">{text}</a>
+import { CSSProperties } from "react";
+
+function LinkToBlank({ url, text, css }: { url: string; text: string, css: CSSProperties }): React.JSX.Element {
+	return <a href={url} target="_blank" style={css}>{text}</a>
 }
 export default LinkToBlank;

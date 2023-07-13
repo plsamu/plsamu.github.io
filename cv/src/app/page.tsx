@@ -4,10 +4,8 @@ import Column2 from "@/components/column2"
 export default function Home() {
 	return (
 		<main>
-			<div className="row">
-				<Column1/> 
-				<Column2/>
-			</div>
+			<Column1 />
+			<Column2 />
 		</main>
 	)
 }
