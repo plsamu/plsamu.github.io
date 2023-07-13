@@ -33,5 +33,6 @@ details {
 
 	&>.details-content {
 		padding: 20px 20px 0px 20px;
+		font-family: Consolas, "Liberation Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, "Courier New", monospace;
 	}
 }

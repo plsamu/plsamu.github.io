@@ -9,9 +9,9 @@ function DetailsContainer({
 	return (
 		<details className="unselectable" style={css}>
 			<summary className="unselectable">{summaryText}</summary>
-			<pre className="unselectable details-content">
+			<div className="unselectable details-content">
 				{children}
-			</pre>
+			</div>
 		</details>
 	)
 }

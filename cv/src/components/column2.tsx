@@ -42,6 +42,19 @@ function Column2(): React.JSX.Element {
 				<br></br>
 				car license: B
 			</DetailsContainer>
+			<DetailsContainer summaryText={"Personal Experiences"}>
+			Erasmus (6 months)
+			<br></br>
+			<LinkToBlank
+					url={"https://cyberchallenge.it/"}
+					text={"Cyber Challenge IT"}
+				/>
+			CPIT2
+			<br></br>
+			Scout (8 years)
+			<br></br>
+			Kum festival
+			</DetailsContainer>
 		</div>
 	)
 }
