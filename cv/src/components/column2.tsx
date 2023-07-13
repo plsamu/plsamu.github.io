@@ -3,7 +3,6 @@ import LinkToBlank from "./link_to_blank";
 import WorkExp from "./work-exp";
 
 function Column2(): React.JSX.Element {
-
 	return (
 		<div className="column2">
 			<DetailsContainer summaryText={"Working experiences"}>
@@ -12,9 +11,9 @@ function Column2(): React.JSX.Element {
 					url="https://www.nautes.com/it"
 					workPosition="Frontend Android Dev"
 					dates={[
-						"05/2021 - 08/2021 | University internship",
-						"09/2021 - 12/2021 | Work stage contract",
-						"01/2022 - 09/2022 | Apprenticeship contract"
+						"05/2021 - 08/2021, University internship",
+						"09/2021 - 12/2021, Work stage contract",
+						"01/2022 - 09/2022, Apprenticeship contract"
 					]}
 					heavyUseTech="Android Kotlin, RX Java, Retrofit, Android Studio, Android Room, creation of npm packages, bash, Gradle build system, aar bundle"
 					mediumUseTech="Git, Github, POP_OS, Conventional Commit, Git Flow, React Native"

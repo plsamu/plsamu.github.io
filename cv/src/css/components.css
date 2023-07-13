@@ -1,5 +1,5 @@
 details {
-	border-left: 1px solid var(--border-color);
+	border-left: 1px solid var(--border-link-color);
 	margin-bottom: 20px;
 
 	&>summary {
@@ -23,6 +23,7 @@ details {
 
 	&[open]>summary {
 		background: rgb(80, 0, 64);
+		color: rgb(222, 222, 222);
 
 		&:before {
 			content: '▼';

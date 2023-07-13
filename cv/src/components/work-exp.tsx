@@ -22,29 +22,38 @@ function WorkExp({
 	RAL?: string
 }): React.JSX.Element {
 	return (
-		<pre style={{ margin:"0", padding:"0", display: "flex", justifyContent: "space-around", flexDirection: "column" }}>
-			<LinkToBlank url={url} text={name} css={{ display: "inline", padding:"0", margin:"0" }} />
+		<pre style={{ margin: "0", padding: "0", display: "flex", justifyContent: "space-around", flexDirection: "column" }}>
+			<LinkToBlank url={url} text={name} css={{ display: "inline", padding: "0", margin: "0" }} />
+			<br></br>
 			<div>{workPosition}</div>
+			<br></br>
 			{dates.map((date, index) => {
 				return <div>{date}</div>
 			})}
+			<br></br>
 			<div style={{ display: "flex" }}>
-				<div style={{ flex: "1" }}>Most used tech</div>
-				<div style={{ flex: "2" }}>{heavyUseTech}</div>
+				<div style={{ flex: "1", borderRight:"1px solid var(--border-color)" }}>Most used tech</div>
+				<div style={{ flex: "2", marginLeft:"10px" }}>{heavyUseTech}</div>
 			</div>
+			<br></br>
 			{
-				mediumUseTech !== "" ?
+				mediumUseTech !== "" ? <>
 					<div style={{ display: "flex" }}>
-						<div style={{ flex: "1" }}>Medium used tech</div>
-						<div style={{ flex: "2" }}>{mediumUseTech}</div>
-					</div> : null
+						<div style={{ flex: "1", borderRight:"1px solid var(--border-color)" }}>Medium used tech</div>
+						<div style={{ flex: "2", marginLeft:"10px" }}>{mediumUseTech}</div>
+					</div>
+				</>
+					: null
 			}
+			<br></br>
 			{
-				lowUseTech !== "" ?
+				lowUseTech !== "" ? <>
 					<div style={{ display: "flex" }}>
-						<div style={{ flex: "1" }}>Low used tech</div>
-						<div style={{ flex: "2" }}>{mediumUseTech}</div>
-					</div> : null
+						<div style={{ flex: "1", borderRight:"1px solid var(--border-color)" }}>Low used tech</div>
+						<div style={{ flex: "2", marginLeft:"10px" }}>{mediumUseTech}</div>
+					</div><br></br>
+				</>
+					: null
 			}
 			{others !== "" ? <div>{others}</div> : null}
 		</pre>
