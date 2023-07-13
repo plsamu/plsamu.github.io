@@ -1,5 +1,6 @@
 details {
 	border-left: 1px solid var(--border-color);
+	margin-bottom: 20px;
 
 	&>summary {
 		/* remove the arrow */
@@ -30,6 +31,6 @@ details {
 	}
 
 	&>.details-content {
-		margin-left: 20px;
+		padding: 20px 20px 0px 20px;
 	}
 }

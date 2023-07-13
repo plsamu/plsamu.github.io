@@ -10,7 +10,6 @@ Spanish 5 8 6
 	return (
 		<div className="column1">
 			<p>Samuele Plescia</p>
-			<p>car license: B</p>
 			<pre>{title}</pre>
 			<LinkToBlank url={"https://github.com/plsamu?tab=repositories"} text={"github repository"} />
 			<LinkToBlank url={"https://sp0.gitbook.io"} text={"gitbook"} />
