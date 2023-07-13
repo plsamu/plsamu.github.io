@@ -11,13 +11,22 @@ function Column2(): React.JSX.Element {
 					url="https://www.nautes.com/it"
 					workPosition="Frontend Android Dev"
 					dates={[
-						"05/2021 - 08/2021, University internship",
-						"09/2021 - 12/2021, Work stage contract",
-						"01/2022 - 09/2022, Apprenticeship contract"
+						"05/2021 -> 08/2021, University internship",
+						"09/2021 -> 12/2021, Work stage contract",
+						"01/2022 -> 09/2022, Apprenticeship contract"
 					]}
 					heavyUseTech="Android Kotlin, RX Java, Retrofit, Android Studio, Android Room, creation of npm packages, bash, Gradle build system, aar bundle"
 					mediumUseTech="Git, Github, POP_OS, Conventional Commit, Git Flow, React Native"
 					others="Never worked with libraries, or framework for complex animations."
+				/>
+				<WorkExp
+					name="aizoOn"
+					url="https://www.aizoongroup.com"
+					workPosition="Backend Dev"
+					dates={["10/2022 -> presente, Apprenticeship contract"]}
+					heavyUseTech="Java Spring Boot, Spring Security, Maven, Docker, MongoDB, Mongo Compass, MySQL, DBeaver, Joplin, IntelliJ, MobaXterm, GitLab"
+					lowUseTech="Kafka, Zeek"
+					css={{ marginTop: "20px" }}
 				/>
 			</DetailsContainer>
 			<DetailsContainer summaryText={"Qualifications and licenses"}>
