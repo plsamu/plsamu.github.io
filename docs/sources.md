@@ -52,3 +52,8 @@
 
 - <https://fonts.google.com/>
 - <https://fonts.google.com/icons>
+
+## generate favicon
+
+- <https://www.xiconeditor.com/>
+- <https://favicon.io/>
