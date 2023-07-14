@@ -12,6 +12,7 @@ Spanish 5 8 6
 			<p>Samuele Plescia</p>
 			<pre>{title}</pre>
 			<LinkToBlank url={"https://github.com/plsamu?tab=repositories"} text={"github repository"} />
+			<LinkToBlank url={"https://github.com/plsamu/plsamu.github.io"} text={"the project of this site"} />
 			<LinkToBlank url={"https://sp0.gitbook.io"} text={"gitbook"} />
 			<LinkToBlank url={"https://www.linkedin.com/in/samueleplescia/"} text={"linkedin"} />
 		</div>

@@ -1,4 +1,5 @@
 import DetailsContainer from "./details";
+import Experience from "./experience";
 import LinkToBlank from "./link_to_blank";
 import WorkExp from "./work-exp";
 
@@ -16,7 +17,7 @@ function Column2(): React.JSX.Element {
 						"01/2022 -> 09/2022, Apprenticeship contract"
 					]}
 					heavyUseTech="Android Kotlin, RX Java, Retrofit, Android Studio, Android Room, creation of npm packages, bash, Gradle build system, aar bundle"
-					mediumUseTech="Git, Github, POP_OS, Conventional Commit, Git Flow, React Native"
+					mediumUseTech="Git, Github, POP_OS, Conventional Commit, Git Flow, React Native, Expo, nvm"
 					others="Never worked with libraries, or framework for complex animations."
 				/>
 				<WorkExp
@@ -28,6 +29,14 @@ function Column2(): React.JSX.Element {
 					mediumUseTech="NodeJS, JPA, Hibernate, MyBatis, Grafana, InfluxDB, Telegraf"
 					lowUseTech="Kafka, Zeek, SonarLint, Sonarqube, Gitlab pipelines"
 					css={{ marginTop: "20px" }}
+				/>
+			</DetailsContainer>
+			<DetailsContainer summaryText={"Explorations"}>
+				<Experience
+					heavyUseTech="Arch Linux, Raspian, Debian, NextJS, VSCode, Microsoft, Python"
+					mediumUseTech="nmap, OpenSSL, Wireguard"
+					lowUseTech="HexChat, WeeChat, GPG"
+					others=""
 				/>
 			</DetailsContainer>
 			<DetailsContainer summaryText={"Qualifications and licenses"}>
@@ -62,6 +71,12 @@ function Column2(): React.JSX.Element {
 					url={"https://www.kumfestival.it/kum-cantieri/"}
 					text={"Kum festival"}
 				/>
+			</DetailsContainer>
+			<DetailsContainer summaryText={"About me"}>
+				I evolve over time. I don't know who I will be in one year, mostly it depends on the
+				environment, but I have some fixed points: music and my projects.
+				I like traveling, but I also like to keep the earth habitable, so I prefer trains,
+				buses, bike. I went to MCH2022 in July and it was one of my most liked experiences.
 			</DetailsContainer>
 		</div>
 	)

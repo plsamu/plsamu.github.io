@@ -1,3 +1,4 @@
+import Experience from "./experience";
 import LinkToBlank from "./link_to_blank";
 
 function WorkExp({
@@ -33,31 +34,7 @@ function WorkExp({
 				return <div>{date}</div>
 			})}
 			<br></br>
-			<div style={{ display: "flex" }}>
-				<div style={{ flex: "1", borderRight: "1px solid var(--border-color)" }}>Most used tech</div>
-				<div style={{ flex: "2", marginLeft: "10px" }}>{heavyUseTech}</div>
-			</div>
-			<br></br>
-			{
-				mediumUseTech !== "" ? <>
-					<div style={{ display: "flex" }}>
-						<div style={{ flex: "1", borderRight: "1px solid var(--border-color)" }}>Medium used tech</div>
-						<div style={{ flex: "2", marginLeft: "10px" }}>{mediumUseTech}</div>
-					</div>
-					<br></br>
-				</>
-					: null
-			}
-			{
-				lowUseTech !== "" ? <>
-					<div style={{ display: "flex" }}>
-						<div style={{ flex: "1", borderRight: "1px solid var(--border-color)" }}>Low used tech</div>
-						<div style={{ flex: "2", marginLeft: "10px" }}>{lowUseTech}</div>
-					</div><br></br>
-				</>
-					: null
-			}
-			{others !== "" ? <div>{others}</div> : null}
+			<Experience heavyUseTech={heavyUseTech} mediumUseTech={mediumUseTech} lowUseTech={lowUseTech} others={others} />
 		</pre>
 	)
 }
