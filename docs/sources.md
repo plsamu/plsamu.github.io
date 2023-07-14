@@ -47,3 +47,8 @@
 # Ascii emoji icons
 
 - <https://emojipedia.org/link/>
+
+# fonts and icons
+
+- <https://fonts.google.com/>
+- <https://fonts.google.com/icons>

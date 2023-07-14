@@ -25,8 +25,8 @@ function Column2(): React.JSX.Element {
 					workPosition="Backend Dev - Cyber Software Engineer"
 					dates={["10/2022 -> presente, Apprenticeship contract"]}
 					heavyUseTech="Java Spring Boot, Spring Security, Maven, Docker, MongoDB, Mongo Compass, MySQL, DBeaver, Joplin, IntelliJ, MobaXterm, GitLab"
-					mediumUseTech="NodeJS"
-					lowUseTech="Kafka, Zeek"
+					mediumUseTech="NodeJS, JPA, Hibernate, MyBatis, Grafana, InfluxDB, Telegraf"
+					lowUseTech="Kafka, Zeek, SonarLint, Sonarqube, Gitlab pipelines"
 					css={{ marginTop: "20px" }}
 				/>
 			</DetailsContainer>
@@ -39,21 +39,29 @@ function Column2(): React.JSX.Element {
 					css={{ display: "inline" }}
 				/>
 				<br></br>
-				<br></br>
 				car license: B
 			</DetailsContainer>
 			<DetailsContainer summaryText={"Personal Experiences"}>
-			Erasmus (6 months)
-			<br></br>
-			<LinkToBlank
+				<LinkToBlank
+					url={"https://en.wikipedia.org/wiki/May_Contain_Hackers"}
+					text={"MCH"}
+				/>
+				Erasmus (6 months)
+				<br></br>
+				<LinkToBlank
 					url={"https://cyberchallenge.it/"}
 					text={"Cyber Challenge IT"}
 				/>
-			CPIT2
-			<br></br>
-			Scout (8 years)
-			<br></br>
-			Kum festival
+				<LinkToBlank
+					url={"https://italia.campus-party.org/"}
+					text={"CPIT2"}
+				/>
+				Scout (8 years)
+				<br></br>
+				<LinkToBlank
+					url={"https://www.kumfestival.it/kum-cantieri/"}
+					text={"Kum festival"}
+				/>
 			</DetailsContainer>
 		</div>
 	)

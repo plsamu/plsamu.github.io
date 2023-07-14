@@ -45,14 +45,15 @@ input[type="checkbox"]:focus {
 	background: rgba(255, 255, 255, 0.201);
 	box-shadow: 0 1px 2px rgba(44, 44, 44, .2);
 	transition: all .3s cubic-bezier(.5, .1, .75, 0.5);
+	transform: translatex(92px);
 }
 
 .toggle:checked {
 	border-color: #654FEC;
 }
 
-.toggle:checked::after {
-	transform: translatex(92px);
+.toggle:checked:after {
+	transform: translatex(0px);
 }
 
 /* text */

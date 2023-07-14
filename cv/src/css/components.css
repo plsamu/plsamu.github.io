@@ -1,6 +1,21 @@
 details {
+	margin-left: 30px;
 	border-left: 1px solid var(--border-link-color);
 	margin-bottom: 20px;
+
+	&:before {
+		content: '▼';
+		position: absolute;
+		transform: translate(-25px, 10px) rotate(-90deg);
+	}
+
+	&[open] {
+		&:before {
+			content: '▼';
+			position: absolute;
+			transform: translate(-25px, 7px);
+		}
+	}
 
 	&>summary {
 		/* remove the arrow */
@@ -9,11 +24,6 @@ details {
 		/* others */
 		padding: 10px;
 		font-weight: 600;
-
-		&:before {
-			content: '➤';
-			margin-right: 5px;
-		}
 
 		&:hover {
 			background: var(--details-hover);
@@ -24,11 +34,6 @@ details {
 	&[open]>summary {
 		background: rgb(80, 0, 64);
 		color: rgb(222, 222, 222);
-
-		&:before {
-			content: '▼';
-			margin-right: 5px;
-		}
 	}
 
 	&>.details-content {
