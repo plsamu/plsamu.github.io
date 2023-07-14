@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: 'cv' # MUST
+        working-directory: './cv'
     steps:
       - uses: actions/checkout@v3
       - name: Detect package manager
