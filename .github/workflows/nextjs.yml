@@ -30,11 +30,12 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: './cv'
+        working-directory: ./cv
     steps:
       - uses: actions/checkout@v3
       - name: Detect package manager
         id: detect-package-manager
+        working-directory: ./cv
         run: |
           if [ -f "${{ github.workspace }}/cv/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
@@ -74,10 +75,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Install dependencies
+        working-directory: ./cv
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
+        working-directory: ./cv
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Static HTML export with Next.js
+        working-directory: ./cv
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
