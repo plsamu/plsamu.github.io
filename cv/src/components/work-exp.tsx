@@ -31,7 +31,7 @@ function WorkExp({
 			<div>{workPosition}</div>
 			<br></br>
 			{dates.map((date, index) => {
-				return <div>{date}</div>
+				return <div key={index}>{date}</div>
 			})}
 			<br></br>
 			<Experience heavyUseTech={heavyUseTech} mediumUseTech={mediumUseTech} lowUseTech={lowUseTech} others={others} />

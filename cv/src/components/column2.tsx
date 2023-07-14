@@ -3,6 +3,12 @@ import Experience from "./experience";
 import LinkToBlank from "./link_to_blank";
 import WorkExp from "./work-exp";
 
+const degree = "Bachelor's degree in Computer Science (L-31)"
+const aboutMe = `I evolve over time. I don't know who I will be in one year, mostly it depends on the
+environment, but I have some fixed points: music and my projects.
+I like traveling, but I also like to keep the earth habitable, so I prefer trains,
+buses, bike. I went to MCH2022 in July and it was one of my most liked experiences.`
+
 function Column2(): React.JSX.Element {
 	return (
 		<div className="column2">
@@ -40,7 +46,7 @@ function Column2(): React.JSX.Element {
 				/>
 			</DetailsContainer>
 			<DetailsContainer summaryText={"Qualifications and licenses"}>
-				Bachelor's degree in Computer Science (L-31)
+				{degree}
 				<br></br>
 				Thesis: <LinkToBlank
 					url={"https://computerscience.unicam.it/marcantoni/tesi/Tor%20da%20frontend%20Android%20a%20backend.pdf"}
@@ -73,10 +79,7 @@ function Column2(): React.JSX.Element {
 				/>
 			</DetailsContainer>
 			<DetailsContainer summaryText={"About me"}>
-				I evolve over time. I don't know who I will be in one year, mostly it depends on the
-				environment, but I have some fixed points: music and my projects.
-				I like traveling, but I also like to keep the earth habitable, so I prefer trains,
-				buses, bike. I went to MCH2022 in July and it was one of my most liked experiences.
+				{aboutMe}
 			</DetailsContainer>
 		</div>
 	)
